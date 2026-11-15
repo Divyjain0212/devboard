@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Run ESLint
-        run: npx eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0
+        run: npx eslint . --max-warnings 0   
 
       - name: Run Prettier check
         run: npx prettier --check "**/*.{js,jsx,ts,tsx,json,css,md}"
